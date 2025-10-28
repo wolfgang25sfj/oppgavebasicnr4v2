@@ -39,9 +39,10 @@ else
 
 <div class="mt-4">
     <h3>Try a LINQ Query:</h3>
-    <a href="@Url.Action("FilterByCity", new { city = "Oslo" })" class="btn btn-primary me-2">Filter by Oslo</a>
-    <a href="@Url.Action("SortByAge")" class="btn btn-secondary me-2">Sort Youngest First</a>
+    <a href="@Url.Action("FilterByCity", new { city = "Oslo" })" class="btn btn-primary me-2">Filter by Oslo (Where)</a>
+    <a href="@Url.Action("SortByAge")" class="btn btn-secondary me-2">Sort Youngest First (OrderBy)</a>
     <a href="@Url.Action("SortByAge", new { descending = true })" class="btn btn-secondary me-2">Sort Oldest First</a>
-    <a href="@Url.Action("AverageAgeByCity")" class="btn btn-info">Show City Averages</a>
+    <a href="@Url.Action("AverageAgeByCity")" class="btn btn-info me-2">Show City Averages (GroupBy)</a>
+    <a href="@Url.Action("SelectCities")" class="btn btn-success me-2">Select Unique Cities (Select + Distinct)</a>
     <a href="@Url.Action("Index")" class="btn btn-outline-secondary">Reset</a>
 </div>

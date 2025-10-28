@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CsvMvcExplorer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d75721a2f8882819f304814bc690edd53b0b3143")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9413d9913ecb43130e91748754a455185cae3493")]
 [assembly: System.Reflection.AssemblyProductAttribute("CsvMvcExplorer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CsvMvcExplorer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

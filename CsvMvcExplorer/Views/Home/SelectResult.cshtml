@@ -1,0 +1,27 @@
+@model List<string>
+@{
+    ViewData["Title"] = "Selected Cities";
+}
+
+<h1>Unique Cities from CSV (via LINQ Select)</h1>
+
+@if (ViewBag.Query != null)
+{
+    <div class="alert alert-info">@ViewBag.Query</div>
+}
+
+@if (!Model.Any())
+{
+    <p>No cities found.</p>
+}
+else
+{
+    <ul class="list-group">
+        @foreach (var city in Model)
+        {
+            <li class="list-group-item">@city</li>
+        }
+    </ul>
+}
+
+<a href="@Url.Action("Index")" class="btn btn-secondary mt-3">Back to List</a>

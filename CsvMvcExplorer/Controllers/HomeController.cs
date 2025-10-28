@@ -31,7 +31,7 @@ namespace CsvMvcExplorer.Controllers
                 return RedirectToAction("Index");
             }
 
-            // LINQ: Case-insensitive filter
+            // LINQ: Case-insensitive filter (Where requirement)
             var filtered = _people
                 .Where(p => p.City.Contains(city, StringComparison.OrdinalIgnoreCase))
                 .ToList();
@@ -68,6 +68,20 @@ namespace CsvMvcExplorer.Controllers
 
             ViewBag.Query = "Average age per city";
             return View(averages);
+        }
+
+        [HttpGet]
+        public IActionResult SelectCities()
+        {
+            // LINQ Select: Pull just the City property from all people (Select requirement)
+            var cities = _people
+                .Select(p => p.City)
+                .Distinct()  // Extra: Distinct() for unique cities
+                .OrderBy(c => c)
+                .ToList();
+
+            ViewBag.Query = $"Unique cities selected from dataset ({cities.Count} total)";
+            return View("SelectResult", cities);  // New view for strings list
         }
 
         public IActionResult Privacy()
