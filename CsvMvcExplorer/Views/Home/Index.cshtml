@@ -1,0 +1,47 @@
+@model List<CsvMvcExplorer.Models.Person>
+@{
+    ViewData["Title"] = "CSV People Explorer";
+}
+
+<h1>People Data from CSV</h1>
+
+@if (ViewBag.Query != null)
+{
+    <div class="alert alert-info">@ViewBag.Query</div>
+}
+
+@if (!Model.Any())
+{
+    <p>No data loaded—check the CSV!</p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.First().Name)</th>
+                <th>@Html.DisplayNameFor(model => model.First().Age)</th>
+                <th>@Html.DisplayNameFor(model => model.First().City)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var person in Model)
+            {
+                <tr>
+                    <td>@person.Name</td>
+                    <td>@person.Age</td>
+                    <td>@person.City</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<div class="mt-4">
+    <h3>Try a LINQ Query:</h3>
+    <a href="@Url.Action("FilterByCity", new { city = "Oslo" })" class="btn btn-primary me-2">Filter by Oslo</a>
+    <a href="@Url.Action("SortByAge")" class="btn btn-secondary me-2">Sort Youngest First</a>
+    <a href="@Url.Action("SortByAge", new { descending = true })" class="btn btn-secondary me-2">Sort Oldest First</a>
+    <a href="@Url.Action("AverageAgeByCity")" class="btn btn-info">Show City Averages</a>
+    <a href="@Url.Action("Index")" class="btn btn-outline-secondary">Reset</a>
+</div>

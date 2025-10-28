@@ -1,0 +1,38 @@
+@model List<CsvMvcExplorer.Controllers.CityAverage>
+@{
+    ViewData["Title"] = "City Averages";
+}
+
+<h1>Average Ages by City</h1>
+
+@if (ViewBag.Query != null)
+{
+    <div class="alert alert-info">@ViewBag.Query</div>
+}
+
+@if (!Model.Any())
+{
+    <p>No data to average.</p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>City</th>
+                <th>Average Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var avg in Model)
+            {
+                <tr>
+                    <td>@avg.City</td>
+                    <td>@avg.AverageAge</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<a href="@Url.Action("Index")" class="btn btn-secondary mt-3">Back to List</a>

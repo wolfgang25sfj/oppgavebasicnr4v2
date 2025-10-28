@@ -1,0 +1,8 @@
+C:\Users\wolfg\Desktop\oppgavebasicnr4v2\csvmvcexplorer\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\wolfg\Desktop\oppgavebasicnr4v2\csvmvcexplorer\obj\Debug\net9.0\CsvMvcExplorer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wolfg\Desktop\oppgavebasicnr4v2\csvmvcexplorer\obj\Debug\net9.0\CsvMvcExplorer.AssemblyInfoInputs.cache
+C:\Users\wolfg\Desktop\oppgavebasicnr4v2\csvmvcexplorer\obj\Debug\net9.0\CsvMvcExplorer.AssemblyInfo.cs
+C:\Users\wolfg\Desktop\oppgavebasicnr4v2\csvmvcexplorer\obj\Debug\net9.0\CsvMvcExplorer.csproj.CoreCompileInputs.cache
+C:\Users\wolfg\Desktop\oppgavebasicnr4v2\csvmvcexplorer\obj\Debug\net9.0\CsvMvcExplorer.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\wolfg\Desktop\oppgavebasicnr4v2\csvmvcexplorer\obj\Debug\net9.0\CsvMvcExplorer.RazorAssemblyInfo.cache
+C:\Users\wolfg\Desktop\oppgavebasicnr4v2\csvmvcexplorer\obj\Debug\net9.0\CsvMvcExplorer.RazorAssemblyInfo.cs
